@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>TAREFA 5 - Tarefa sobre componentes</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">T5</a>
+                <form class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Digite algo..." aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>TAREFA 5 - Tarefa sobre componentes</h1>
+
+        <section>
+    
+            <div class="container slide-banner">
+                <div class="col-8">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-current="true"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-current="true"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://a.cdn-hotels.com/gdcs/production62/d586/1be9ef68-2abb-45f3-98e2-3fb842683b9e.jpg?impolicy=fcrop&w=1600&h=1066&q=medium/600" alt="Praia de Copacabana" class="d-block w-100">
+                                <div class="carousel-caption description">
+                                    <h5>Praia de Copacabana - Rio de Janeiro/RJ</h5>
+                                    <p>Imagem 1</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://imgmd.net/images/c_limit%2Cw_800/v1/guia/1700960/praia-do-farol-da-barra.jpg" alt="Praia do Farol da Barra" class="d-block w-100">
+                                <div class="carousel-caption description">
+                                    <h5>Praia do Farol da Barra - Salvador/BA</h5>
+                                    <p>Imagem 2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://a.cdn-hotels.com/gdcs/production146/d1307/53d91412-c34c-4829-88c6-68a9fd1c8d5d.jpg?impolicy=fcrop&w=1600&h=1066&q=medium/600" alt="Praia de Boa Viagem 3" class="d-block w-100">
+                                <div class="carousel-caption description">
+                                    <h5>Praia de Boa Viagem - Recife/PE</h5>
+                                    <p>Imagem 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section>
+            <div class="container m-4">
+                <div class="row">
+                    <div class="col-3 card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/02/http___cdn.cnn_.com_cnnnext_dam_assets_220223091414-01b-tripadvisor-top-10-beaches-world.jpg?w=732&h=412&crop=1/300" alt="Praia de Grace Bay" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Praia de Grace Bay.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal">info+</button>
+                        </div>
+                    </div>
+                    <div class="col-3 card card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2021/02/Baia-do-Sancho.jpg?w=1220&h=674&crop=1/300" alt="Praia de Varadero" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Praia de Varadero.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal2">info+</button>
+                        </div>
+                    </div>
+                    <div class="col-3 card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/02/http___cdn.cnn_.com_cnnnext_dam_assets_220222231617-03-tripadvisor-top-10-beaches-world.jpg?w=732&h=412&crop=1/300" alt="Baía Turquesa" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Baía Turquesa.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal3">info+</button>
+                        </div>
+                    </div>
+                    <div class="col-3 card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/02/http___cdn.cnn_.com_cnnnext_dam_assets_220223041049-04-tripadvisor-top-10-beaches-world.jpg?w=732&h=412&crop=1/300" alt="Praia em Morro de São Paulo" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Praia em Morro de São Paulo.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal4">info+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-4">
+                    <div class="col-3 card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/02/http___cdn.cnn_.com_cnnnext_dam_assets_220223041051-05-tripadvisor-top-10-beaches-world.jpg?w=732&h=412&crop=1/300" alt="Eagle Beach" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Eagle Beach.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal5">info+</button>
+                        </div>
+                    </div>
+                    <div class="col-3 card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/02/http___cdn.cnn_.com_cnnnext_dam_assets_220223041053-06-tripadvisor-top-10-beaches-world.jpg?w=732&h=412&crop=1/300" alt="Praia Radhanagar" class="card-img-top imgCard">
+                        <div class="card-body">
+                            <p class="card-text">Praia Radhanagar.</p>
+                            <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modal6">info+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Container -->
+            <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Praia de Grace Bay</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">Grace Bay é praticamente um cenário dos sonhos: suas areias brancas se estendem por 12 quilômetros e as águas azul-turquesa são claras e calmas. Neste ano, ela liderou o Travelers’ Choice Awards, do TripAdvisor, como a melhor praia do mundo – assim como em muitas outras premiações.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Praia de Varadero</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">Varadero é uma cidade resorte na província de Matanzas, em Cuba, a 140 km da capital Havana. Com praias de areia branca, águas azul turquesa e céus ensolarados, é fácil ver porque Varadero tem sido um destino de férias há mais de um século.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Baía Turquesa</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">No Cape Range National Park, em Exmouth, Austrália Ocidental, Turquoise Bay é um local popular para mergulho com snorkel.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Praia em Morro de São Paulo</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">A Quarta Praia é frequentemente considerada a mais bonita, com suas águas cristalinas, piscinas naturais na maré baixa e um ambiente tranquilo e preservado.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Eagle Beach</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">Eagle Beach é uma praia e bairro de Oranjestad, Aruba. O bairro é famoso por seus muitos resorts baixos e ampla praia pública. É a praia mais larga de Aruba e tem areia branca e macia. Foi classificada como uma das melhores praias do mundo.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title modalBox" id="modalLabel">Praia Radhanagar</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modalBox">A praia de Radhanagar da ilha de Havelock, a ilha está 41 quilômetros ao nordeste do capital, do Port Blair, do Andaman e das ilhas Nicobar, Índia.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5><i class="bi bi-c-circle">opyright</i></h5>
+    </footer>
+    
+</body>
+
+</html>

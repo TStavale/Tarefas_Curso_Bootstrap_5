@@ -1,0 +1,55 @@
+
+
+h1 {
+    text-align: center;
+    margin: 30px auto 60px;
+    text-decoration: underline;
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    background: rgba(88, 182, 219, 0.5);
+    border-radius: 15px;
+    border: none;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h5, p {
+    color: rgb(63, 61, 61);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.modalBox {
+    text-decoration: none;
+}
+.imgCard {
+    height: 300px;
+    padding-top: 10px;
+}
+
+footer{
+    background: #1f1e1e;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+footer h5 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
